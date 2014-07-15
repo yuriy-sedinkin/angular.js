@@ -25,7 +25,7 @@ install:
   # Log HTTP requests
   - npm config set loglevel http
   # Run npm install twice, because it is flaky.
-  - npm install || npm install
+  - time npm install
 
 before_script:
   - mkdir -p $LOGS_DIR
